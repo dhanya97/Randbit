@@ -9,7 +9,7 @@ class BitGen:
     
     @staticmethod
     def generate_private_key():
-        return binascii.hexlify(os.urandom(32)).decode()
+        return binascii.hexlify(os.urandom(8)).decode()
 
     @staticmethod
     def private2wif(private_key):
